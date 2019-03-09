@@ -1,0 +1,16 @@
+.*/
+.classpath
+.project
+.settings
+.vagrant/
+bin/
+target/
+idea/
+*.iml
+vertx-start-process.id
+vertx.log*
+*.pyc
+.tox/
+*.egg-info
+.cache-main
+node_modules/

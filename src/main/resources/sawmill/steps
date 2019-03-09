@@ -1,0 +1,107 @@
+{
+    steps: [{
+            if: {
+                condition: {
+                    mathComparator: {
+                        field: "ColA"
+                        gte: 100
+                    }
+                }
+                then: [{
+                    addField: {
+                        config: {
+                            path: "ColA"
+                            value: 1
+                        }
+                    }
+                }]
+                else :[{
+                    addField: {
+                        config: {
+                            path: "ColA"
+                            value: 2
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            if: {
+                condition: {
+                    mathComparator: {
+                        field: "ColB"
+                        gte: 20
+                    }
+                }
+                then: [{
+                    addField: {
+                        config: {
+                            path: "ColB"
+                            value: 2
+                        }
+                    }
+                }]
+                else :[{
+                    addField: {
+                        config: {
+                            path: "ColB"
+                            value: 4
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            if: {
+                condition: {
+                    mathComparator: {
+                        field: "ColC"
+                        gte: 10
+                    }
+                }
+                then: [{
+                    addField: {
+                        config: {
+                            path: "ColC"
+                            value: 1
+                        }
+                    }
+                }]
+                else :[{
+                    addField: {
+                        config: {
+                            path: "ColC"
+                            value: 5
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            if: {
+                condition: {
+                    mathComparator: {
+                        field: "ColD"
+                        gte: 50
+                    }
+                }
+                then: [{
+                    addField: {
+                        config: {
+                            path: "ColD"
+                            value: 2
+                        }
+                    }
+                }]
+                else :[{
+                    addField: {
+                        config: {
+                            path: "ColD"
+                            value: 1
+                        }
+                    }
+                }]
+            }
+        }
+    ]
+}

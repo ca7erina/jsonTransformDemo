@@ -1,0 +1,27 @@
+[
+  {
+    "operation": "jolt.SensorDataTransform",
+    "spec": {
+      "ColA": {
+        "> 50": 1,
+        "< 50": 2,
+        "default": 0
+      },
+      "ColB": {
+        "> 50": 2,
+        "< 50": 1,
+        "default": 0
+      },
+      "ColC": {
+        "> 50": 2,
+        "< 50": 1,
+        "default": 0
+      },
+      "ColD": {
+        "> 50": 3,
+        "< 50": 1,
+        "default": 0
+      }
+    }
+  }
+]
